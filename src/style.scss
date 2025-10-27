@@ -55,11 +55,13 @@ main {
   }
 
   .template {
-    padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
 
     .title h2 {
+      margin: 0;
+    }
+
+    p {
       margin: 0;
     }
 
