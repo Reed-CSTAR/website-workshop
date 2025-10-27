@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /*
+            If you want to use fonts, see https://fontsource.org/.
+            You can also use the system's default font, by specifying
+            `font-family: system-ui;` in the `html { ... }` directive below.
+        */
+
+        html {
+            color-scheme: light dark;
+        }
+
+        body {
+            /* Moves the information to the center using flexboxes. */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .links {
+            text-align: center;
+        }
+
+        /* Alignment: by default, webpages like keeping everything at the top. */
+        body, html {
+            height: 100%;
+        }
+
+        /* We also need to get rid of the default margin to remove an annoying scrollbar */
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>My Website</h1>
+        <p>
+            I am a person. Sometimes I talk about
+            topics in other places. Below are said places.
+        </p>
+        <p class="links">
+            <a href="https://example.com">(example)</a>
+            <a href="https://example.com">(dot)</a>
+            <a href="https://example.com">(com)</a>
+        </p>
+    </main>
+</body>
+</html>
