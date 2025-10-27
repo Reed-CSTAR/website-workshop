@@ -44,6 +44,9 @@ jobs:
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v4
+        with:
+            name: build
+            path: build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
