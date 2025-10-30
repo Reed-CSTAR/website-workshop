@@ -1,19 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import OrnamentPng from './ornament.png'
+import './style.scss'
+---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSTAR's Website Workshop</title>
-    <link rel="stylesheet" href="src/style.scss">
   </head>
   <body>
     <main>
       <h1>CSTAR's Website Workshop</h1>
-      <img src="src/ornament.png" width="500px" height="16px" alt="" role="presentation">
+      <Image src={OrnamentPng} width=500 height=16 alt="" role="presentation" />
       <p>
         Below are a few website templates. We have
         <a href="https://reed-cstar.github.io/guides/">guides on how to use people.reed.edu</a>,
-        and <a href="/website-workshop/tutorials">tutorials</a> on how to modify these
+        and a <a href="/website-workshop/cheatsheet/index.html">cheatsheet</a> on how to modify these
         templates.
       </p>
 
