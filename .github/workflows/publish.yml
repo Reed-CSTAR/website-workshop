@@ -32,8 +32,8 @@ jobs:
       - name: Upload built project output
         uses: actions/upload-artifact@v5
         with:
-            name: build
-            path: build
+            name: dist
+            path: dist
   pages:
     needs: checks
     if: github.event_name != 'pull_request'
@@ -45,14 +45,15 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v6
         with:
-            path: build
+            name: dist
+            path: dist
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload entire repository
-          path: 'build'
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
