@@ -29,7 +29,7 @@
             font-family: 'Roboto Serif Variable', serif;
         }
 
-        header {
+        .header-title {
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -39,14 +39,25 @@
             font-size: 4rem;
             margin: 0;
         }
+
+        .links {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="ferret-profile.png" width="100px" alt="Front portrait of a ferret.">
-        <h1>Ferret Animal</h1>
+        <div class="header-title">
+            <img src="ferret-profile.png" width="100px" alt="Front portrait of a ferret.">
+            <h1>Ferret Animal</h1>
+        </div>
+        <hr />
+        <div class="links">
+            <a href="https://example.com">tube-in</a>
+            &bull; <!-- fancy dot character -->
+            <a href="https://example.com">business-source</a>
+        </div>
     </header>
-    <hr />
     <main>
         <p>
             I'm <b>Ferret Animal</b> (call me Animal in official correspondence,
